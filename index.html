@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <!--Metadata-->
+    <meta charset="utf-8">
+    <meta name="description" content="Number Display, with JavaScript">
+    <meta name="keywords" content="immaculata, ics2o">
+    <meta name="author" content="Stella S">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favs/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favs/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favs/favicon-16x16.png">
+    <link rel="manifest" href="./favs/site.webmanifest">
+    
+  <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Number Display in JS</title>
+  </head>
+  <body>
+    <script src="./js/script.js"></script>
+	  <center>
+	  
+    <h1>Number Display in JS</h1>
+		<h3>Enter in a max and a min number of your choice:</h3>
+		<table>
+			<tr align = "center">
+				<td valign="top" align="right">					
+					<form action="javascript:displayNumbers()">	
+            <!-- Min number text field -->
+						<label for="min">Enter Min Number:</label>
+						<input type="number" step="1" min="0" id="min"><br><br>	
+            <!-- Max number text field -->
+    				<label for="max">Enter Max Number:</label>
+    			<input type="number" step="1" min="0" id="max"><br><br>	
+    		  <input type="submit" name="submit" value="Display Numbers" onclick="displayNumbers()">
+    		</form>
+    		</td>
+    	  <td valign="top" align="left">
+    		<img src="./image/numbers.jpg" alt="Numbers" width="90%">
+    	</td>
+			</tr>
+		</table>	
+		<!-- Create a space where the user information will be displayed -->
+		<div id="display-numbers">			
+		</div>
+  </body>
+</html>
